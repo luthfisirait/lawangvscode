@@ -1,0 +1,80 @@
+/* Styling untuk Team Page */
+.team-page {
+    padding: 60px 20px;
+  }
+  
+  .team-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .team-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .team-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Styling untuk Anggota Tim */
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .team-member {
+    width: 22%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px); /* Efek hover */
+  }
+  
+  .team-member-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .team-member-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .team-member-role {
+    font-size: 1rem;
+    color: #0070f3;
+    font-weight: normal;
+  }
+  
+  /* Responsif untuk perangkat kecil */
+  @media (max-width: 768px) {
+    .team-members {
+      justify-content: center;
+    }
+  
+    .team-member {
+      width: 45%; /* Lebar lebih besar pada layar kecil */
+      margin-bottom: 20px;
+    }
+  }

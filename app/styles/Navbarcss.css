@@ -1,0 +1,147 @@
+/* Navbar Awal */
+.navbar {
+    position: fixed; /* Membuat navbar di atas elemen lainnya */
+    top: 0;
+    left: 0;
+    width: 80%; /* Memastikan navbar mencakup seluruh lebar layar */
+    z-index: 50; /* Navbar berada di atas elemen lainnya */
+    background-color: transparent; /* Transparan di awal */
+    padding: 15px 20px; /* Sesuaikan padding agar navbar lebih lebar */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+    left: 50%;
+  transform: translateX(-50%); /* Menempatkan navbar di tengah */
+  border-radius: 20px; /* Sudut tumpul */
+  margin: 12px auto; /* Agar ada jarak di atas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar saat Scroll */
+  .navbar.scrolled {
+    background-color: #ffffff; /* Berubah menjadi putih saat di-scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  }
+  .menubars {
+    display: none; /* Sembunyikan di desktop */
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  /* Navbar Container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Batas lebar navbar */
+    margin: 0 auto; /* Tengahkan navbar */
+    padding: 0 20px; /* Jarak kiri dan kanan */
+  }
+  
+  /* Brand */
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff; /* Warna teks brand */
+  }
+  
+  /* Menu */
+  .navbar-menu {
+    list-style: none; /* Hapus tanda list */
+    display: flex; /* Menu horizontal */
+    gap: 30px; /* Jarak antar item */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Link Default */
+  .navbar-link {
+    text-decoration: none; /* Hapus garis bawah */
+    color: #ffffff; /* Warna default link */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efek transisi warna */
+  }
+  .navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+/* Active Section Link */
+.navbar-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0070f3; /* Garis bawah untuk indikasi aktif */
+}
+  
+  /* Link saat Hover */
+  .navbar-link:hover {
+    color: #0070f3; /* Warna biru saat kursor di atas */
+  }
+  
+  /* Link saat Navbar di-scroll */
+  .navbar.scrolled .navbar-link {
+    color: #333; /* Warna teks berubah saat background putih */
+  }
+  .navbar.navbar.scrolled .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333; /* Warna teks brand */
+  }
+
+
+  @media (max-width: 768px) {
+    .navbar-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 0;
+      transform: translateY(-200%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    .navbar{
+      width: 100%;
+      border-radius: 0px;
+    }
+    
+  
+    .navbar-menu.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    .menubars {
+      display: block; /* Pastikan terlihat pada layar kecil */
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Untuk Desktop: Tampilkan Menu Horizontal */
+  @media (min-width: 769px) {
+
+    
+    .navbar-menu {
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+      visibility: visible;
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Jarak antar item */
+    margin: 0;
+    padding: 0;
+  }

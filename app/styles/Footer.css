@@ -1,0 +1,115 @@
+.footer {
+    background-color: #f9f9f9;
+    color: #606060;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 16px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .top-section {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 16px;
+  }
+  
+  .social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .icon {
+    font-size: 16px;
+    color: #606060;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #000;
+  }
+  
+  .follow-text {
+    margin-top: 8px;
+  }
+  
+  .link {
+    color: #606060;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #000;
+  }
+  
+  .bottom-section {
+    padding-top: 16px;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list li {
+    margin-bottom: 4px;
+  }
+  
+  .subscribe-text {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    margin-top: 16px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 12px 0;
+    border-top: 1px solid #dcdcdc;
+    font-size: 14px;
+  }

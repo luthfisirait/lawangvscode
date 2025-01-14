@@ -1,0 +1,28 @@
+/* Main Page Styles */
+.main-page {
+    height: 100vh; /* Tinggi halaman penuh */
+    background-image: url('../assets/diving.jpg'); /* Ganti URL dengan gambar Aceh Aquathic */
+    background-size: cover; /* Gambar memenuhi layar */
+    background-position: center; /* Posisikan gambar di tengah */
+    display: flex;
+    justify-content: center; /* Konten berada di tengah horizontal */
+    align-items: center; /* Konten berada di tengah vertikal */
+    color: white; /* Warna teks putih */
+    text-align: center;
+    padding: 0 20px; /* Ruang tambahan untuk teks */
+  }
+  
+  /* Title */
+  .main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Bayangan pada teks */
+  }
+  
+  /* Description */
+  .main-description {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Bayangan pada teks */
+  }

@@ -1,0 +1,120 @@
+/* Styling untuk Event & Donations Page */
+.event-donation-page {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  /* Styling untuk Kartu */
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Efek hover */
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0070f3;
+    margin-bottom: 15px;
+  }
+  
+  .card-subtitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .card-button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-button:hover {
+    background-color: #005bb5; /* Warna saat hover */
+  }
+  
+  /* Tombol dengan warna berbeda */
+  .donate-button {
+    background-color: #f76c6c;
+  }
+  
+  .donate-button:hover {
+    background-color: #e15b5b;
+  }
+  
+  .register-button {
+    background-color: #6a9eeb;
+  }
+  
+  .register-button:hover {
+    background-color: #4f8ad0;
+  }
+  
+  .ticket-button {
+    background-color: #3a9d60;
+  }
+  
+  .ticket-button:hover {
+    background-color: #2d8d50;
+  }
+  
+  .terms-text {
+    font-size: 1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Responsif untuk perangkat kecil */
+  @media (max-width: 768px) {
+    .cards-container {
+      justify-content: center;
+    }
+  
+    .card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
