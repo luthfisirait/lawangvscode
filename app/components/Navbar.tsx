@@ -46,7 +46,9 @@ const Navbar = () => {
         </div>
 
         {/* Brand */}
-        <h1 className="navbar-brand">My Navbar</h1>
+        <h1 className="navbar-brand">
+        <img src='../logo.svg' alt="Logo" className="navbar-logo" />
+          </h1>
 
         {/* Menu */}
         <ul className={`navbar-menu ${showMenu ? "active" : ""}`}>

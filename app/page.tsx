@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 
 import About from "./components/About";
+import Documentation from "./components/Documentation";
 import EventDonation from "./components/EventDonation";
 import Footer from "./components/Footer";
 import Locationme from "./components/Locationme";
@@ -17,6 +18,7 @@ export default function Home() {
     <About id='about'/>
     <Team id='ourteam'/>
     {/*<EventDonation/>*/}
+    <Documentation id='documentation'/>
    <Locationme/>
    <Footer/>
   </div>

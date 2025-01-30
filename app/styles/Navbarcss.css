@@ -14,6 +14,10 @@
   margin: 12px auto; /* Agar ada jarak di atas */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  .navbar-logo {
+    height: 70px; /* Adjust the height as needed */
+}
+
   
   /* Navbar saat Scroll */
   .navbar.scrolled {
@@ -80,6 +84,9 @@
   }
   
   /* Link saat Navbar di-scroll */
+  .navbar.scrolled .navbar-menu{
+    background-color: #ffffff;
+  }
   .navbar.scrolled .navbar-link {
     color: #333; /* Warna teks berubah saat background putih */
   }
@@ -91,12 +98,15 @@
 
 
   @media (max-width: 768px) {
+    .navbar{
+      background-color: rgba(0, 0, 0, 0.674);
+    }
     .navbar-menu {
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.674);
       flex-direction: column;
       align-items: center;
       gap: 15px;
@@ -126,12 +136,11 @@
   
   /* Untuk Desktop: Tampilkan Menu Horizontal */
   @media (min-width: 769px) {
-
+  
     
     .navbar-menu {
       position: static;
       flex-direction: row;
-      background-color: transparent;
       visibility: visible;
       transform: none;
       opacity: 1;
