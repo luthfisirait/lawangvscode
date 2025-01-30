@@ -2,9 +2,25 @@
 
 import React from "react";
 import '../styles/Aboutcss.css';
+import Head from 'next/head';
 
 const About = ({ id }: { id?: string }) => {
     return (
+      <>
+      <Head>
+        <title>About Aquathic Aceh - Coral Reef Conservation</title>
+        <meta name="description" content="Learn about Aquathic Aceh, a group of passionate young individuals actively engaged in coral reef conservation in Aceh. Discover our vision and achievements." />
+        <meta name="keywords" content="Aquathic Aceh, coral reef conservation, marine life, youth community, sustainable conservation" />
+        <meta name="author" content="Aquathic Aceh" />
+        <meta property="og:title" content="About Aquathic Aceh - Coral Reef Conservation" />
+        <meta property="og:description" content="Learn about Aquathic Aceh, a group of passionate young individuals actively engaged in coral reef conservation in Aceh. Discover our vision and achievements." />
+        <meta property="og:image" content="/assets/terumbu-karang.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/about" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Aquathic Aceh - Coral Reef Conservation" />
+        <meta name="twitter:description" content="Learn about Aquathic Aceh, a group of passionate young individuals actively engaged in coral reef conservation in Aceh. Discover our vision and achievements." />
+        <meta name="twitter:image" content="/assets/terumbu-karang.jpg" />
+      </Head>
       <section id={id}>
         <div className="about-page">
           {/* Bagian Konten About */}
@@ -12,20 +28,21 @@ const About = ({ id }: { id?: string }) => {
             <div className="about-content">
               <h1 className="about-title">About Aquathic Aceh</h1>
               <p className="about-description">
-                Aceh Aquatic Youth is a community dedicated to preserving the marine
-                environment, with a particular focus on coral reef conservation. We
-                believe that the beauty of Aceh's underwater world is a legacy that
-                must be protected for future generations. Through coral rehabilitation
-                and transplantation programs, we strive to support a healthy and
-                sustainable marine ecosystem.
+              Aceh Aquatic Youth is a group of 37 passionate young individuals actively engaged in coral reef conservation in Aceh. We believe that through hard work, education, and strong collaboration, we can protect and preserve coral reefs, which are home to many valuable marine species.
+              </p>
+              <h2 className="about-title">
+              Vision
+              </h2>
+              <p className="about-description">
+              To become a pioneering youth community for sustainable conservation in Aceh, based on collaboration, education, and innovation to preserve marine and coastal ecosystems as a valuable heritage for future generations..
               </p>
             </div>
     
             {/* Gambar Diving */}
             <div className="about-image">
               <img
-                src="https://example.com/path-to-your-diving-image.jpg"
-                alt="Diving"
+                src='./assets/terumbu-karang.jpg'
+                alt="Coral reef conservation by Aquathic Aceh"
                 className="image"
               />
             </div>
@@ -48,6 +65,7 @@ const About = ({ id }: { id?: string }) => {
           </div>
         </div>
         </section>
+        </>
       );
     };
   

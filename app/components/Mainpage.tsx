@@ -8,9 +8,9 @@ const MainPage = ({ id }: { id?: string }) => {
     <section id={id}>
     <main className="main-page">
       <div className="main-content">
-        <h1 className="main-title">Aceh Aquathic</h1>
+        <h1 className="main-title">Aceh Aquatic</h1>
         <p className="main-description">
-          Jelajahi keindahan bawah laut Aceh yang memukau, penuh dengan keanekaragaman hayati dan pengalaman yang tak terlupakan.
+        Explore the mesmerizing underwater beauty of Aceh, teeming with biodiversity and unforgettable experiences.
         </p>
       </div>
     </main>
